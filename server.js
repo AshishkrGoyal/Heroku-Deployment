@@ -4,12 +4,12 @@
 var express = require('express');
 var app = express();
 
-var port = process.env.port || 5000;
+var portal = process.env.PORT || 5000;
 
 app.use('/',function (request,response) {
-    response.send('www.github.com/ashishkrgoyal/');
+    response.end('www.github.com/ashishkrgoyal/');
 });
 
-app.listen(port,function () {
+app.listen(portal,function () {
     console.log('application is in running phase');
 });
